@@ -1,0 +1,134 @@
+---
+
+    const navegacion = [
+        {
+            titulo:'NOSOTROS',
+            url:'#',
+            lista: [
+                { titulo: 'Quiero Ser Agente', url: 'nosotros/quiero-ser-agente' },
+                { titulo: 'Liberty Fianzas', url: 'nosotros/liberty-fianzas' },
+                { titulo: 'Liberty Mutual Group', url: 'nosotros/liberty-mutual-group' },
+                { titulo: 'Información Corporativa', url: 'nosotros/informacion-corporativa' },
+                { titulo: 'Oficinas', url: '/oficinas' },
+            ]
+        },
+        {
+            titulo:'SERVICIOS',
+            url:'#',
+            lista: [
+                {
+                    titulo:'Fianzas Administrativas',
+                    url:'#'
+                },
+                {
+                    titulo:'Fianzas de Crédito',
+                    url:'#'
+                },
+                {
+                    titulo:'Fianzas Judiciales',
+                    url:'#'
+                },
+                {
+                    titulo:'Fianzas De Fidelidad',
+                    url:'#'
+                },
+                {
+                    titulo:'Solicita Tu Fianza',
+                    url:'#'
+                }
+            ],
+        },
+        {
+            titulo:'CLIENTES',
+            url:'#',
+            lista: [
+                {
+                    titulo:'Valida Tu Fianza',
+                    url:'#'
+                },
+                {
+                    titulo:'Descarga Tu CFDI',
+                    url:'#'
+                },
+                {
+                    titulo:'Formatos',
+                    url:'#'
+                },
+                {
+                    titulo:'Requisitos Para Solicitar Una Fianza',
+                    url:'#'
+                },
+                {
+                    titulo:'Preguntas Frecuentes',
+                    url:'#'
+                }
+            ],
+        },
+        {
+            titulo:'CONTACTO',
+            url:'#',
+            lista: []
+        }
+    ]
+
+---
+
+<div class="header-top">
+    <div class="container d-flex justify-content-between">
+        <div class="idiomaContainer align-items-center">
+            <a class="me-lg-3" href="">Español</a>
+            <a href="">Inglés</a>
+        </div>
+        <button>Valida tu fianza</button>
+    </div>
+</div>
+
+<div class="header-mid">
+    <div class="container d-flex justify-content-between">
+        <div class="uno d-flex align-items-center">
+            <div class="label me-lg-4">ATENCIÓN EN OFICINAS</div>
+            <button>CONOCE MÁS</button>
+        </div>
+        <div class="dos">X</div>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="">
+            <img src="https://www.libertyfianzas.com/wp-content/uploads/2023/02/logo-liberty-fianzas-005.png" alt="">
+        </a>
+
+        <div class="menu.container d-flex align-items-center">
+            <div class="row me-4">
+                {navegacion.map((item) => (
+                    <div class="optMenu list col-lg-3">
+                    <div class="label">{item.titulo}</div>
+                    <ul class="optList">
+                        {item.lista.map((opcion) => (
+                        <li><a href={opcion.url}>{opcion.titulo}</a></li>
+                        ))}
+                    </ul>
+                    </div>
+                ))}
+            </div>
+
+            <button>SERF</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .header-bottom .optMenu.list ul.optList{
+        display: none;
+    }
+
+    .header-bottom .menuContainer{
+        
+    }
+    .optMenu{
+        
+    }
+</style>
+
+<script></script>

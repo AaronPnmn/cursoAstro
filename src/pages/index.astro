@@ -1,0 +1,145 @@
+---
+import Layout from "../shared/layout/layout.astro";
+import Slider from "../shared/components/slider.astro";
+import BotonNavegacion from "../shared/components/botonNavegacion.astro";
+---
+
+<Layout title="Liberty Fianzas - Inicio">
+	<main>
+		<!-- SECCION 1 -->
+		<section id="secc1">
+			<Slider />
+		</section>
+		<!-- ::::::::: SECC-1 ::::::::: -->
+
+		<!-- SECCION 2 -->
+		<section id="secc2">
+			<div class="container">
+				<h1 class="text-center">Expertos en Fianzas en México</h1>
+				<div class="homeSecc3wrapper">
+					<div class="textWrapper">
+						<h3>Liberty Fianzas</h3>
+						<p>
+							Somos una empresa con resultados sobresalientes
+							emitiendo fianzas en México
+						</p>
+						<BotonNavegacion />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ESTILOS -->
+		<style>
+			.homeSecc3wrapper {
+				background-color: #ffd101;
+				padding: 4rem;
+				padding-right: 45%;
+				background-repeat: no-repeat;
+				background-position-x: 83%;
+				background-position-y: 50%;
+				background-size: 17%;
+				background-image: url("../wp-content/uploads/2023/02/prueba3-amarillo-e1677189614712.jpg");
+			}
+
+			.homeSecc3wrapper .textWrapper {
+				text-align: center;
+				padding: 2rem;
+				position: relative;
+				background-color: #ffff;
+			}
+
+			.homeSecc3wrapper .textWrapper::after {
+				content: "";
+				position: absolute;
+				left: 13%;
+				top: 100%;
+				width: 0;
+				height: 0;
+				border-left: 35px solid transparent;
+				border-right: 35px solid transparent;
+				border-top: 35px solid #ffff;
+				clear: both;
+			}
+		</style>
+		<!-- SCRIPT -->
+		<script type="module"></script>
+		<!-- ::::::::: SECC-2 ::::::::: -->
+
+		<!-- SECCION 3 -->
+		<section id="secc3">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 text-center">
+						<h2>32</h2>
+						<h3>Años de experiencia</h3>
+					</div>
+					<div class="col-lg-4 text-center">
+						<h2>766</h2>
+						<h3>Agentes</h3>
+					</div>
+					<div class="col-lg-4 text-center">
+						<h2>56 mil</h2>
+						<h3>Clientes satisfechos</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ESTILOS -->
+		<style></style>
+		<!-- SCRIPT -->
+		<script type="module"></script>
+		<!-- ::::::::: SECC-3 ::::::::: -->
+
+		<!-- SECCION 4 -->
+		<section id="secc4">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 text-center">
+						<h2>Quiero Ser Agente</h2>
+						<p>Contamos con intermediarios de reconocido prestigio y profesionalismo en el Sector Afianzador en México</p>
+						<button>Conoce los requisitos</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ESTILOS -->
+		<style></style>
+		<!-- SCRIPT -->
+		<script type="module"></script>
+		<!-- ::::::::: SECC-4 ::::::::: -->
+
+		<!-- SECCION 5 -->
+		<section id="secc5">
+			<div class="container">
+				<h2>Nuestros Servicios</h2>
+				<div class="row fianzas-container">
+					<div class="col-lg-6 label">Fianza</div>
+					<div class="col-lg-6 label">Fianza</div>
+					<div class="col-lg-6 label">Fianza</div>
+					<div class="col-lg-6 label">Fianza</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ESTILOS -->
+		<style>
+			.fianzas-container{
+
+			}
+
+			.fianzas-container .label{
+				
+			}
+		</style>
+		<!-- SCRIPT -->
+		<script type="module"></script>
+		<!-- ::::::::: SECC-4 ::::::::: -->
+	</main>
+</Layout>
+
+<style>
+	/* Estilos globales si es necesario */
+</style>
